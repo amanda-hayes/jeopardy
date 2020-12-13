@@ -48,7 +48,7 @@ function App() {
           <h2 className="Counter"> <Counter /></h2>
           <div className="main-content">
             {/* <h1>JEOPARDY</h1> */}
-              <button className="questionBtn" onClick={() => updateGame()}>NextQuestion</button>
+              <button className="questionBtn" onClick={() => updateGame()}>Next Question</button>
                 <div className="questionText">
                   {question.question}
                     <Question answer={question.answer} />
