@@ -1,21 +1,16 @@
+@font-face{
+  font-family: "Korinna BT";
+  src: url("./korinna-bt.ttf") format("truetype");
+}
 
-
-.App {
+.main-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-.App-link {
-  color: #61dafb;
-}
 
 h1 {
   font-size: 48px;
+  text-align: center;
 }
 
 
@@ -23,41 +18,43 @@ body {
   background-color: darkblue;
   color: white;
   font-family: 'Korinna BT';
-  font-size: 60px;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 20px;
 }
 
 
 .increaseBtn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: green;
   color: white;
-  margin: 10px;
+  margin: 5px 5px 5px 10px;
 }
 
 .decreaseBtn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: red;
   color: white;
-  margin: 10px;
+  margin: 5px;
 }
 
 .resetBtn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: black;
   color: white;
-  margin: 10px;
+  margin: 5px;
 }
 
 .questionBtn {
   font-size: 1.5rem;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .answerBtn {
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 10px;
+  text-align: center;
 }
 
 .questionText {
@@ -69,5 +66,11 @@ body {
 .stats {
   font-size: 1.4rem;
   text-align: left;
-  margin: 10px;
+}
+
+img {
+  max-width: 200px;
+  text-align: right;
+  box-shadow: 5px 10px inset;
+  margin-bottom: 10px;
 }
