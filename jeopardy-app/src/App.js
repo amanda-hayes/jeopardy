@@ -26,33 +26,26 @@ function App() {
     updateGame();
   }, []);
 
-
   return (
     <div>
-      <img src="./jeopardy-logo.jpg"></img>
-      
-  {
+      <img src="./jeopardy-logo.jpg"></img> 
+    {
       game.map((question) => {
         console.log(question);
           let category = question.category.title;
           let value = question.value;
         return (
-        <div>
-          
+        <div>   
           <span className="stats">Category: {category}</span>
           <br />
           <span className="stats">Points: {value}</span>
-
-          
-
           <h2 className="Counter"> <Counter /></h2>
-          <div className="main-content">
-            {/* <h1>JEOPARDY</h1> */}
-              <button className="questionBtn" onClick={() => updateGame()}>Next Question</button>
-                <div className="questionText">
-                  {question.question}
-                    <Question answer={question.answer} />
-                    </div>
+            <div className="main-content">
+                <button className="questionBtn" onClick={() => updateGame()}>Next Question</button>
+                  <div className="questionText">
+                    {question.question}
+                      <Question answer={question.answer} />
+                      </div>
             </div>
         </div>
       )
